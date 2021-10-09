@@ -1,13 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #621402;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
 .container {
-  max-width: 1070px;
+  max-width: 970px;
   margin: 0 auto;
 }
 
 .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg) no-repeat center top / cover;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   padding-top: 30px;
@@ -41,4 +52,139 @@ body {
   color: #fff;
   display: flex;
   align-items: center;
+}
+
+.film {
+  margin-top: 50px;
+  color: #fff;
+}
+
+.film-title-smail {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.film-title {
+  font-style: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.film {
+  display: flex;
+  align-items: center;
+}
+
+.film-traler {
+  margin: auto;
+}
+
+.film-ditails {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.timr-icon {
+  margin-right: 14px;
+}
+
+.raying {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+}
+
+.reatin-current {
+  font-style: 24px;
+  line-height: 150%;
+}
+
+.reatin-icon {
+  margin-right: 14px;
+}
+
+.session {
+  padding-top: 46px;
+  padding-bottom: 63px;
+  margin-top: 62px;
+  margin-bottom: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sass-lable {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sass-date-bloc {
+  display: flex;
+}
+
+.sess-day-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  transition: background-color 0.2s;
+}
+
+.sess-day-item:hover {
+  background-color: #FE8E05;
+  color: #621402;
+}
+
+.sess-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sess-day {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.sess-week {
+  font-size: 19px;
+  line-height: 20px;
+}
+
+.select {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  padding: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.sel-sim {
+  min-width: 470px;
 }
